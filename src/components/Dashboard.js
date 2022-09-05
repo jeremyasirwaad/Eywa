@@ -20,6 +20,26 @@ import {
 	Line
 } from "recharts";
 
+import words from "./morkwords";
+
+import ReactWordcloud from "react-wordcloud";
+
+const options = {
+	colors: ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"],
+	enableTooltip: true,
+	deterministic: false,
+	fontFamily: "impact",
+	fontSizes: [5, 50],
+	fontStyle: "normal",
+	fontWeight: "normal",
+	padding: 1,
+	rotations: 3,
+	rotationAngles: [0, 0],
+	scale: "sqrt",
+	spiral: "archimedean",
+	transitionDuration: 1000
+};
+
 const data = [
 	{
 		name: "Page A",
@@ -250,6 +270,7 @@ export const Dashboard = () => {
 	return (
 		<div>
 			<Navbar></Navbar>
+			<div style={{ height: "70px" }}></div>
 			<div className="dashcontainer">
 				<div className="dashinner">
 					<div className="left">
@@ -379,17 +400,6 @@ export const Dashboard = () => {
 										</BarChart>
 									</ResponsiveContainer>
 								</div>
-								{/* <BarChart width={270} height={220} data={data}>
-									<CartesianGrid strokeDasharray="3 3" />
-									<XAxis dataKey="name" fontSize={"10px"} />
-									<YAxis fontSize={"10px"} />
-									<Tooltip
-										contentStyle={{ color: "black" }}
-										itemStyle={{ color: "black" }}
-									/>
-									
-									<Bar dataKey="uv" fill={"pink"} />
-								</BarChart> */}
 							</div>
 						</div>
 						<div className="rightbottom">
@@ -542,6 +552,11 @@ export const Dashboard = () => {
 										</ResponsiveContainer>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div className="rightbottom">
+							<div className="rightdeep">
+								<ReactWordcloud words={words} options={options} />
 							</div>
 						</div>
 					</div>
