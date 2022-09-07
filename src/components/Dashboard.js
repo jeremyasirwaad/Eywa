@@ -1,6 +1,7 @@
 import React from "react";
 import "./dashboard.css";
 import { Navbar } from "./Navbar";
+import { Keysnippets } from "./Keysnippets";
 import {
 	AreaChart,
 	Area,
@@ -270,8 +271,9 @@ export const Dashboard = () => {
 	return (
 		<div>
 			<Navbar></Navbar>
-			<div style={{ height: "70px" }}></div>
+			<div style={{ height: "40px" }}></div>
 			<div className="dashcontainer">
+				<div className="sidenav"></div>
 				<div className="dashinner">
 					<div className="left">
 						<div className="leftr">
@@ -291,8 +293,60 @@ export const Dashboard = () => {
 							</div>
 						</div>
 						<div className="leftsearch">
-							<i class="fa-solid fa-magnifying-glass"></i>
-							<input type="text" />
+							<div className="leftsearcht">
+								<i class="fa-solid fa-magnifying-glass"></i>
+								<input type="text" />
+							</div>
+							<div className="leftsearchbt">
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+								<Keysnippets />
+							</div>
 						</div>
 					</div>
 					<div className="right">

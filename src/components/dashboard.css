@@ -8,7 +8,7 @@
     width: 100%;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    height: calc(100vh - 70px);
     /* margin-bottom: 220px; */
     /* background-color: aqua; */
 }
@@ -17,9 +17,11 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    width: 90%;
+    width: 100%;
    /* background-color: black; */
+    /* height: calc(100vh - 70px); */
     height: 100%;
+    margin-left: 300px;
    
 }
 
@@ -155,10 +157,14 @@ display: flex;
 
 .leftsearch{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    
+    flex-direction: column;
+    /* padding: 10px; */
+    justify-content: center;
     align-items: center;
+  
+    /* height: 100%; */
 }
 
 .leftsearch i {
@@ -183,4 +189,29 @@ display: flex;
     align-items: center;
     justify-content: center;
     /* margin-bottom: 20px; */
+}
+
+.sidenav{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+}
+
+.leftsearcht{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 50px; */
+    
+}
+
+.leftsearchbt
+{
+    width: 100%;
+    height: 1096px;
+    margin-top: 10px;
+    overflow: scroll;
 }
